@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сантехнические работы: установка, ремонт и обслуживание.">
+  <title>Сантехника — сделаем всё на все 100!</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-mark">М</span>
+      <span>Мамут<span class="brand-dot">.</span></span>
+    </a>
+
+    <button class="menu-toggle" type="button"
+      aria-label="Открыть меню" aria-expanded="false"
+      aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#about">О нас</a>
+      <a href="#services">Услуги</a>
+      <a href="#works">Наши работы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <a class="header-phone" href="tel:+77000000000">
+      +7 (700) 000-00-00
+    </a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          МАСТЕРА САНТЕХНИКИ
+        </p>
+
+        <h1>Сделаем всё<br>на все <span>100!</span></h1>
+
+        <p class="hero-description">
+          Ремонт, монтаж и обслуживание сантехники —
+          аккуратно, надёжно и без лишней суеты.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contacts">
+            Вызвать мастера <span>↗</span>
+          </a>
+          <a class="button button-ghost" href="#services">
+            Наши услуги
+          </a>
+        </div>
+
+        <div class="hero-points">
+          <div><strong>01</strong><span>Быстро отвечаем</span></div>
+          <div><strong>02</strong><span>Работаем аккуратно</span></div>
+          <div><strong>03</strong><span>Обсуждаем цену заранее</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+
+        <div class="hero-image-frame">
+          <img src="assets/plumber-hero.jpg"
+            alt="Сантехник с инструментами выполняет ремонт"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+
+          <div class="image-placeholder">
+            <span class="placeholder-icon">🔧</span>
+            <strong>Место для главного фото</strong>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSazdh1Q-ENjet1yBVBj-VyfqP8N0q0bo45_XpMbHHs_JJlMRJn2pWnlWOI&s=10">
+          </div>
+        </div>
+
+        <div class="floating-tag">
+          <span class="tag-icon">✓</span>
+          <span>
+            <strong>Надёжный подход</strong>
+            <small>От заявки до результата</small>
+          </span>
+        </div>
+
+        <div class="floating-number">100<span>%</span></div>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">КТО МЫ</p>
+        <h2>Решаем сантехнические<br>
+          <span>задачи без головной боли</span>
+        </h2>
+      </div>
+
+      <div class="about-content reveal">
+        <p>
+          Помогаем поддерживать дом в порядке: от небольшой
+          протечки до полноценного монтажа сантехники.
+          Объясняем, что нужно сделать, согласовываем стоимость
+          и только потом приступаем к работе.
+        </p>
+        <a class="text-link" href="#contacts">
+          Обсудить задачу <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="services section-wrap" id="services">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ЧЕМ ПОМОЖЕМ</p>
+        <h2>Наши <span>услуги</span></h2>
+        <p class="section-subtitle">
+          Выбери нужную услугу — или расскажи, что случилось.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="card-top">
+            <span class="service-number">01</span>
+            <span class="service-icon">⌁</span>
+          </div>
+          <h3>Ремонт сантехники</h3>
+          <p>Устраним протечки, заменим смеситель, сифон и неисправные детали.</p>
+          <a href="#contacts">Подробнее <span>↗</span></a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-top">
+            <span class="service-number">02</span>
+            <span class="service-icon">◉</span>
+          </div>
+          <h3>Монтаж и установка</h3>
+          <p>Установим раковину, унитаз, ванну, душевую систему и другое оборудование.</p>
+          <a href="#contacts">Подробнее <span>↗</span></a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-top">
+            <span class="service-number">03</span>
+            <span class="service-icon">⤧</span>
+          </div>
+          <h3>Трубы и коммуникации</h3>
+          <p>Монтаж и замена труб, подключение сантехники и проверка соединений.</p>
+          <a href="#contacts">Подробнее <span>↗</span></a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-top">
+            <span class="service-number">04</span>
+            <span class="service-icon">✳</span>
+          </div>
+          <h3>Обслуживание</h3>
+          <p>Проверим оборудование, найдём причину проблемы и предложим решение.</p>
+          <a href="#contacts">Подробнее <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="works section-wrap" id="works">
+      <div class="section-heading reveal">
+        <p class="eyebrow">РЕЗУЛЬТАТ В ДЕТАЛЯХ</p>
+        <h2>Наши <span>работы</span></h2>
+        <p class="section-subtitle">
+          Здесь будут фотографии выполненных заказов.
+        </p>
+      </div>
+
+      <div class="work-grid">
+        <figure class="work-card reveal">
+          <img src="https://remont-f.ru/upload/iblock/0e3/dizayn-interyera-v-3-komnatnoi-kvartire-144-kv-m-foto-36-3719.jpg"
+            alt="Установленная сантехника в ванной комнате"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="image-placeholder">
+            <span class="placeholder-icon">＋</span>
+            <img src="https://remont-f.ru/upload/iblock/0e3/dizayn-interyera-v-3-komnatnoi-kvartire-144-kv-m-foto-36-3719.jpg"
+            alt="работа1"
+            >
+            <small>assets/work-1.jpg</small>
+          </div>
+          <figcaption>Установка сантехники</figcaption>
+        </figure>
+
+        <figure class="work-card reveal">
+          <img src="assets/work-2.jpg"
+            alt="Монтаж труб и сантехнических коммуникаций"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="image-placeholder">
+            <span class="placeholder-icon">＋</span>
+            <strong>Фото работы № 2</strong>
+            <small>assets/work-2.jpg</small>
+          </div>
+          <figcaption>Монтаж коммуникаций</figcaption>
+        </figure>
+
+        <figure class="work-card reveal">
+          <img src="assets/work-3.jpg"
+            alt="Ремонт сантехнического оборудования"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="image-placeholder">
+            <span class="placeholder-icon">＋</span>
+            <strong>Фото работы № 3</strong>
+            <small>assets/work-3.jpg</small>
+          </div>
+          <figcaption>Ремонт и обслуживание</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contacts">
+      <div class="contact-panel reveal">
+        <div>
+          <p class="eyebrow">ЕСТЬ ЗАДАЧА?</p>
+          <h2>Давайте всё<br><span>починим.</span></h2>
+          <p class="contact-copy">
+            Позвони или напиши — обсудим задачу и договоримся о времени.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button button-primary" href="tel:+77000000000">
+            Позвонить мастеру ↗
+          </a>
+          <a class="button button-ghost"
+            href="https://wa.me/77000000000"
+            target="_blank" rel="noopener noreferrer">
+            Написать в WhatsApp
+          </a>
+          <small>Замени номер телефона на свой в HTML.</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home">
+      <span class="brand-mark">S</span>
+      <span>САНТЕХНИКА<span class="brand-dot">.</span></span>
+    </a>
+    <p>Сделаем всё на все 100!</p>
+    <span>© <span id="year">2026</span> Все права защищены</span>
+  </footer>
+</body>
+</html>
